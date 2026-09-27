@@ -1,0 +1,74 @@
+/* lyrics.css - External stylesheet for song lyrics */
+.song-lyrics {
+    background-color: chocolate;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.artist {
+    font-size: 14pt;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: moccasin;
+}
+
+.song-title {
+    font-size: 14pt;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: khaki;
+}
+
+.album {
+    font-size: 12pt;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: khaki;
+}
+
+.year {
+    font-size: 12pt;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: ivory;
+}
+
+.verse {
+    font-size: 14pt;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: gold;
+    margin-left: 2cm;
+    margin-right: 2cm;
+}
+
+.chorus {
+    font-size: 14pt;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: gold;
+    margin-left: 4cm;
+    margin-right: 4cm;
+}
+
+@media (300px <= width <= 767px) {
+        .song-lyrics {
+        text-align: center;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+        .verse {
+        margin-left: 0cm;
+        margin-right: 0cm;
+    }
+        .chorus {
+        margin-left: 2cm;
+        margin-right: 2cm;
+    }
+
+}

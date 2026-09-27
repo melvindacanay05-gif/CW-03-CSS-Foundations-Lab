@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document Title</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="lyrics.css">
+    </head>
+    <body>
+        <h1 class="welcome-cl" id="welcome-id">
+            Welcome to my page
+        </h1> 
+        <section id="exercise-2">
+            <h2>Exercise 2: Debugging CSS</h2>
+            <div class="corrected-css">
+                <h3>My Debugging Analysis</h3>
+                <h4>
+                    Mistake 1:
+                </h4>
+                body {
+                    font-family: "Times New Roman";<br>
+                    margin-left: 20%;<br>
+                    margin-right: 20%;<br>
+                    text-align: justify;<br>
+                    background: ivory;<br>
+                    color: red<br>
+                }
+                <br><br>
+                body {
+                    font-family: "Times New Roman", Arial;<br>
+                    margin-left: 20%;<br>
+                    margin-right: 20%;<br>
+                    text-align: left; (correction)<br>
+                    background: ivory;<br>
+                    color: red<br>
+                }                    
+                <br>
+                Correction: 
+                The alignment for the heading and the paragraph text
+                should not both be set to justify or it may
+                confuse the reader and ruin the flow of the text
+                being read, instead it should be aligned to the left
+                to achieve or center to be better for users and the page
+                <br><br> 
+                <h4>Mistake 2:</h4>                                                          
+                h1, h2, h3 {<br>
+                    color: #ff0000;<br>
+                    font-size: 2.5em;<br>
+                    margin: 20px 0px 20px 0px;<br>
+                }
+                <br><br>                                        
+                h1, h2, h3 {<br>
+                    color: #ff0000;<br>
+                    margin: 20px 0px 20px 0px;<br>
+                }
+                <br><br>                                        
+                Correction: 
+                setting the font size of all 3 heading sizes to be a 
+                proportion of the pages size causes all 3 headings
+                to be the same size, removing it altogether fixes
+                this issue
+                <br><br>                                       
+                <h4>Mistake 3:</h4>                       
+                .container {<br>
+                    width: 100%;<br>
+                    padding: 20px;<br>
+                    box-sizing: border-box<br>
+                }
+                <br><br>
+                .container {<br>
+                    padding: 20px;<br>
+                    box-sizing: border-box<br>
+                }
+                <br><br>                                   
+                Correction: I removed width 100% because it is already
+                a default value when setting the box sizing to border box
+                        
+            </div>
+        </section>
+        <section class="song-lyrics">
+            <h2 class="song-title">Blinding Lights</h2>
+            <h2 class="artist">The Weeknd</h2>
+            <h3 class="album">After Hours</h3>
+            <h3 class="year">2020</h3>
+            <p class="verse">
+                I been tryna call, I been on my own for long enough
+                <br><br>
+                Maybe you can show me how to love, maybe
+                <br><br>
+            </p>    
+            <p class="chorus">
+                I'm going through a crisis, I thought I'd see the light
+                <br><br>
+                But there's nothing but blinding lights
+                <br><br>
+            </p>
+            <p class="verse">
+                I'm looking for something that I can't see
+                <br><br>
+                Maybe you can show it to me, maybe
+                <br><br>
+            </p>
+            <p class="chorus">
+                I'm going through a crisis, I thought I'd see the light
+                <br><br>
+                But there's nothing but blinding lights
+            </p>
+        </section>
+        <section class="timetable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10:00</td>
+                        <td></td>
+                        <td class="design-an" rowspan="2">Design and Analysis: Algorithims 10:00 - 11:45</td>
+                        <td></td>
+                        <td class="design-an" rowspan="2">Design and Analysis: Algorithims 10:00 - 11:45</td>
+                    </tr>
+                    <tr>
+                        <td>11:00</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>12:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>13:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>14:00</td>
+                        <td class="web-p" rowspan="2">Web Programming 2:30 - 4:15</td>
+                        <td class="machine-learning" rowspan="3">Machine Learning 2:45 - 4:30</td>
+                        <td class="web-p" rowspan="2">Web Programming 2:30 - 4:15</td>
+                        <td class="machine-learning" rowspan="3">Machine Learning 2:45 - 4:30</td>
+                    </tr>
+                    <tr>
+                        <td>15:00</td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>17:00</td>
+                        <td></td>
+                        <td class="db-sys" rowspan="2">Database Systems 5:30 - 7:15</td>
+                        <td></td>
+                        <td class="db-sys" rowspan="2">Database Systems 5:30 - 7:15</td>
+                    </tr>
+                    <tr>
+                        <td>18:00</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>19:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="gallery">
+            <section class="ug-problem">
+                <h3>UG Problem 1</h3>
+                <img src="images/ug_1_annotations.png" alt="annotated specificity evaluation">
+                <p>
+                    Annotated DevTools screenshot
+                </p>
+                <img src="images/ug_1_handwritten.jpg" alt="handwritten specificity calculation">
+                <p>
+                    Handwritten specificity calculation for 3 different declarations
+                </p>
+            </section>
+            <section class="ug-problem">
+                <h3>UG Problem 2</h3>
+                <img src="images/ug_2_border.png" alt="border box box model">
+                <p>
+                    Box model using the border box constraint
+                </p>
+                <img src="images/ug_2_content.png" alt="content box box model">
+                <p>
+                    Box model using the content box constraint
+                </p>
+                <h4>Measured Widths Before and After the Switch</h4>
+                <p>
+                    Widths Before: (border + padding + content) 1.6 + 40 + 498.0 = 539.6
+                    Widths After: (border + padding + content) 1.6 + 40 + 378.4 = 420.0
+                    The widths for both content box and border box settings were the same
+                    because I was tweaking the margin values
+                </p>
+            </section>
+            <section class="ug-problem">
+                <h3>UG Problem 3</h3>
+                <img src="images/ug_3_odd_before.png" alt="Odd viewport before capture">
+                <p>
+                    Odd viewport before my media query
+                </p>
+                <img src="images/ug_3_odd_after.png" alt="Odd viewport after capture">
+                <p>
+                    Odd viewport after my media query
+                </p>
+                <img src="images/ug_3_reg_before.png" alt="Desktop regression before modification">
+                <p>
+                    Desktop regression capture before my change
+                </p>
+                <img src="images/ug_3_reg_after.png" alt="Desktop regression after modification">
+                <p>
+                    Desktop regression capture after my change
+                </p>
+            </section>
+            <section class="ug-problem">
+                <h3>UG Problem 4</h3>
+                <img src="images/ug_4_contrast.png" alt="Contrast ratio for an element">
+                <p>
+                    The contrast ratio for the green element with white text (reletively good)
+                </p>
+                <img src="images/ug_4_contrast2.png" alt="Contrast ratio for an element">
+                <p>
+                    The contrast ratio for the purple element with white text (best one)
+                </p>
+                <img src="images/ug_4_exp.png" alt="Greyscale timetable">
+                <p>
+                    My Timetable adjusted to a greyscale color palette
+                </p>
+                <h4>Which non color cue carries meaning?</h4>
+                <p>
+                    The text and the positioning of the different blocks give alot of context
+                    but the text is the most helpful label for the different time blocks.
+                </p>
+                <h4>Peer evaluation</h4>
+                <p>"The different shades help but i still need to rely on the text" -AT</p>
+            </section>
+        </section>
+    </body>
+</html>
